@@ -1,3 +1,445 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#logoOnjeg{
+	height: 20px;
+	width: 60px;
+}
+
+#btnLogin
+{
+	float: left;
+	margin-top: 10px;
+	background-color: #e84c3d;
+	color: white;
+	text-align: center;
+}
+
+#btnLogin:hover
+{
+	float: left;
+	margin-top: 10px;
+	background-color: #e84c3d;
+	color: white;
+	text-align: center;
+  	transform: translateY(1px);
+}
+
+
+.btnLearnMore
+{
+	background-color:#2799fa;
+	color: white;
+	border: 1px solid #2799fa;
+	padding: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.btnLearnMore:hover
+{
+	
+	background-color: white;
+	color: #2799fa;
+	border: 1px solid #2799fa;
+	padding: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.btnOpenInYourBrowser
+{
+	background-color: #2799fa;
+	color: white;
+	border: 1px solid #2799fa;
+	padding: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.btnOpenInYourBrowser:hover
+{
+
+	background-color: white;
+	color: #2799fa;
+	border: 1px solid #2799fa;
+	padding: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.section1 p
+{
+	font-size: 16px;
+}
+
+.section2 
+{
+	background-color: #f3f3f3;
+}
+
+.headerSection2 h5
+{
+	color: #2799fa; 
+	margin-top: 50px; 
+	margin-bottom: -10px;
+}
+
+.headerSection2 p
+{
+	font-size: 16px;
+}
+
+
+.section3
+{
+	margin-bottom: 20px;
+}
+
+.headerSection3 h5
+{
+	color: #2799fa; 
+	text-align: center;
+}
+
+.headerSection3 h1
+{
+	text-align: center;
+}
+
+.headerSection3 p
+{
+	font-size: 16px;
+	text-align: center;
+}
+
+.row
+{
+		margin-left: -15px;
+		margin-right: -15px;
+}
+
+.memberTeam
+{
+	margin-bottom: 12px;
+}
+.memberTeam img
+{
+	float: right;
+	background-color: blue;
+	width: 150px;
+	height: 150px;
+}
+
+.memberTeamDescription 
+{
+	padding-left: 20px;
+}
+
+.section4
+{
+	background-color: #f3f3f3;
+}
+
+.headerSection4 h5
+{
+	color: #2799fa;
+	padding-top: 20px; 
+}
+
+.headerSection4 p
+{
+	float: left;
+}
+
+#btnOpenBrowser
+{
+	float: left;
+}
+
+.section5
+{
+	padding-top: 50px;
+}
+
+.offer
+{
+	text-align: center;
+}
+
+.offerNext
+{
+	text-align: center;
+	border-left: 2px solid;
+	
+}
+
+.offer h1
+{
+	color: #e84c3d;
+	font-weight: bold;
+}
+
+.offerNext h1
+{
+	color: #e84c3d;
+	font-weight: bold;
+}
+
+.offerField
+{
+	margin-bottom: 50px;
+}
+
+.btnSignUpToRide
+{
+	background-color:#2799fa;
+	color: white;
+	border: 1px solid #2799fa;
+	padding: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-bottom: 50px;
+ }
+
+ .signUp
+ {
+ 	text-align: center;
+ 	margin-bottom: 20px;
+ }
+
+.footer
+{
+	padding-top: 50px;
+	padding-bottom: 50px;		
+	background-color: #2d3e50;
+	color: white;
+}
+
+.linkNavbar
+{
+	display: block;
+	text-decoration: none;
+	list-style: none;
+	color: white;
+}
+
+.linkSocialMedia
+{
+	display: block;
+	text-decoration: none;
+	list-style: none;
+}
+
+.btnGo
+{
+	color: #e84c3d;
+}
+
+#btnAboutUs
+{
+	color: white;
+	margin-bottom: 5px;
+}
+
+#btnContact
+{
+	color: white;
+	margin-bottom: 5px;
+}
+
+#btnTermsCondition
+{
+	color: white;
+	margin-bottom: 5px;
+}
+.logoSocialMedia
+{
+	float: left;
+	height: 20px;
+	width: 20px;
+}
+
+#facebook{
+	margin-bottom: 5px;
+}
+
+#twitter{
+	margin-bottom: 5px;
+}
+
+#instagram{
+	margin-bottom: 5px;
+}
+
+
+.descriptionSocialMedia
+{
+	margin-left: 35px;
+}
+
+#descriptionFacebook
+{
+	color: white;
+	margin-bottom: 5px;
+
+}
+
+#descriptionTwitter
+{
+	color: white;
+	margin-bottom: 5px;
+
+}
+
+#descriptionIstagram
+{
+	color: white;
+	margin-bottom: 5px;
+
+}
+
+
+
+/* Form Progress */
+.progressBar {
+  margin: 20px auto;
+  text-align: center;
+  float: left;
+}
+.progressBar .circle,
+.progressBar .bar {
+  display: inline-block;
+  background: #fff;
+  width: 40px; height: 40px;
+  border-radius: 40px;
+  border: 1px solid #d5d5da;
+}
+.progressBar .bar {
+  position: relative;
+  width: 80px;
+  height: 6px;
+  top: -33px;
+  margin-left: -5px;
+  margin-right: -5px;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+.progressBar .circle .label {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 32px;
+  margin-top: 3px;
+  color: #b5b5ba;
+  font-size: 17px;
+}
+.progressBar .circle .title {
+  color: #b5b5ba;
+  font-size: 13px;
+  line-height: 30px;
+  margin-left: -5px;
+}
+
+/* Done / Active */
+.progressBar .bar.done,
+.progressBar .circle.done {
+  background: #eee;
+}
+.progressBar .bar.active {
+  background: linear-gradient(to right, #EEE 40%, #FFF 60%);
+}
+.progressBar .circle.done .label {
+  color: #FFF;
+  background: #2799fa;
+  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+}
+.progressBar .circle.done .title {
+  color: #444;
+}
+.progressBar .circle.active .label {
+  color: #FFF;
+  background: #0c95be;
+  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+}
+.progressBar .circle.active .title {
+  color: #0c95be;
+}
+
+
+
+@media only screen and (max-width: 995px){
+	.section1 h1 {
+		font-size: 26px;
+	}
+
+	.section1 p {
+		font-size: 14px;
+	}
+	.btnSection1 {
+		font-size: 12px;
+	}
+
+	.section2 h5 {
+		font-size: 14px;
+	}
+
+	.section2 h1 {
+		font-size: 26px;
+	}
+
+	.section2 p {
+		font-size: 14px;
+	}
+
+	.headerSection3 h5 {
+		font-size: 14px;
+	}
+
+	.headerSection3 h1{
+		font-size: 26px;
+	}
+
+	.headerSection3 p{
+		font-size: 14px;
+	}
+
+	.memberTeamDescription h3{
+		font-size: 20px;
+	}
+
+	.memberTeamDescription p{
+		font-size: 14px;
+	}
+
+	.headerSection4 h5{
+		font-size: 12px;
+	}
+
+	.headerSection4 h1{
+		font-size: 26px;
+	}
+
+	.headerSection4 h3{
+		font-size: 20px;
+	}
+
+	.headerSection4 p{
+		font-size: 14px;
+	}
+
+	.btnOpenInYourBrowser{
+		font-size: 12px;
+		margin-bottom: 20px;
+	}
+
+	.btnSignUpToRide{
+		font-size: 12px;
+		margin-bottom: -10px;
+	}
+
+}
+
