@@ -1,66 +1,60 @@
-#tubuh{
-    background-color: #f3f3f3;  
-    }
-    
-    div.well{
-      height: 250px;
-    } 
-    
-    .box{
-      background-color: #ffffff;
-      padding: 10px;
-      box-shadow: 5px 10px 60px #888888;
-    }
-    
-    .Absolute-Center {
-      margin: auto;
-      position: absolute;
-      top: 0; left: 0; bottom: 0; right: 0;
-    }
-    
-    .Absolute-Center.is-Responsive {
-      width: 50%; 
-      height: 50%;
-      min-width: 200px;
-      max-width: 400px;
-      padding: 30px;
-    }
-    
-    
-    .headerLogin{
-      text-align: center;
-      font-weight: bold;
-      border-bottom: 0.1px outset;
-      padding-bottom: 20px; 
-    }
-    
-    .txtLink
-    { 
-      text-decoration: underline;
-    }
-    
-    .txtInputBox{
-      font-size: 12px;
-      margin-top: 12px;
-      font-weight: bold;
-    }
-    
-    .btnLogin{
-      max-width: 50%;
-      background-color: #e84c3d;
-      color: white;
-      margin-left: 25%;
-      margin-right: 25%;
-    }
-    
-    .cbAgree{
-      padding-top: 10px;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
+#tubuh {
+  background-color: #f3f3f3;
+}
+
+div.well {
+  height: 250px;
+}
+
+.box {
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 5px 10px 60px #888888;
+}
+
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.Absolute-Center.is-Responsive {
+  width: 50%;
+  height: 50%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 30px;
+}
+
+
+.headerLogin {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 0.1px outset;
+  padding-bottom: 20px;
+}
+
+.txtLink {
+  text-decoration: underline;
+}
+
+.txtInputBox {
+  font-size: 12px;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.btnLogin {
+  max-width: 50%;
+  background-color: #e84c3d;
+  color: white;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.cbAgree {
+  padding-top: 10px;
+}

@@ -4,9 +4,13 @@ class CreateOrders < ActiveRecord::Migration[5.2]
       t.datetime :date
       t.integer :cost
       t.string :completed_status
-      t.string :pick_up_address
-      t.string :destination_address
+      t.string :pick_up_location
+      t.string :destination_location
+      t.string :pick_up_place_id
+      t.string :destination_place_id
       t.string :notes_for_driver
+      #driver id
+      #user id
       t.timestamps
     end
   end

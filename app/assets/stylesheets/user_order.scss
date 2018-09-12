@@ -1,0 +1,116 @@
+body {
+    background-color: #fff;
+    font-family: "Lato", sans-serif;
+}
+
+.left {
+    background-color: #fff;
+}
+
+.title {
+    margin-top: 35%;
+    text-align: center;
+}
+
+.setLocation {
+    box-shadow: 3px 3px #e6e6e6;
+    width: 510px;
+    margin-left: 7%;
+    margin-top: 7%;
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+.line-separator {
+    height: 3px;
+    background: #e6e6e6;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.priceTxt {
+    margin-right: -15%;
+    font-size: 20pt;
+    margin-top: 10%;
+}
+
+.orderBtn {
+    margin-top: 5%;
+    margin-left: 33%;
+
+}
+
+/*Sidebar Navbar*/
+
+.txt {
+    margin-top: 100px;
+}
+
+.txtLogOut {
+    margin-top: 350px;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2a2e43;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #fff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.hamburger {
+    margin-left: 1%;
+
+}
+
+.orderBtn2 {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+}

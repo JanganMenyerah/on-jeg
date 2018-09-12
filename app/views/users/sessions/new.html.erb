@@ -1,26 +1,76 @@
-<h2>Log in</h2>
+<!DOCTYPE html>
+<html>
+<head>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
+  <title>Sign In - OnJeg</title>
+</head>
+<body id="tubuh">
 
-  <% if devise_mapping.rememberable? -%>
+<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><%= image_tag("home/logo.jpg", :alt => "logo", :id => "logoOnjeg") %></a>
+			</div>
+    </div>
+  </nav>
+
+<div class="container">
+  <div class="row">
+    <div class="box Absolute-Center is-Responsive">
+      <div class="headerLogin">Login</div>
+      <div class="col-sm-12 col-md-10 col-md-offset-1">
+<%= form_for(resource, as: resource_name, url: session_path(resource_name, :html => { :id => "loginForm"})) do |f| %>
+        
+          <div class="txtInputBox">e-mail</div>
+          <div class="form-group input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>   
+          </div>
+          <div class="txtInputBox">password</div>
+          <div class="form-group input-group">
+            <span class="input-group-addon"><i class="iconLock glyphicon glyphicon-lock"></i></span>
+    <%= f.password_field :password, autocomplete: "current-password", class: "form-control" %>  
+          </div>
+          <!--   -->
+            <% if devise_mapping.rememberable? -%>
     <div class="field">
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
     </div>
   <% end -%>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
+          <div class="form-group">
+    <%= f.submit "Log in", :class => "btnLogin btn btn-def btn-block" %>
 
+          </div>
+          <!--
+          <div class="form-group text-center">
+            <a href="#">Forgot Password?</a>&nbsp;|&nbsp;<a href="#" class="txtLink">Click Here</a>
+          </div>
+          
+          <div class="form-group text-center">
+            <a href="#">Don't have an account?</a>&nbsp;|&nbsp;<a href="#" class="txtLink">Sign Up</a>
+          </div>
+          -->
+       <% end %>    
 <%= render "users/shared/links" %>
+
+      </div>  
+    </div>    
+  </div>
+</div>
+
+</body>
+
+</html>
+

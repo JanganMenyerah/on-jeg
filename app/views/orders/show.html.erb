@@ -1,4 +1,4 @@
 <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_order_path(@order) %> |
-<%= link_to 'Back', orders_path %>
+<%= button_to "CancelOrder", order_path, data: { confirm: "Are you sure?" }, method: :delete %></p>
+<%= link_to 'Back', new_order_path %>
