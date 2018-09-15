@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   get '/destination', to: 'orders#destination', as: 'destination'
   post '/pick_up', to: 'orders#pick_up_post'
   post '/destination', to: 'orders#destination_post'
-
+  get '/driver/order_page', to: 'drivers/home#order_page', as: 'driver_order_page'
+  post '/confirmation', to: 'drivers/home#completed_confirmation', as: 'completed_confirmation'
+  get '/history', to: 'orders#history', as: 'history'
 end

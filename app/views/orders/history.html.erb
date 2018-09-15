@@ -1,0 +1,40 @@
+<%= render "orders/user_template" %>
+
+<div class="col-xs-12 title">
+	<h1 style="margin-top: -30%;"><b>ORDER HISTORY</b></h1>
+</div>
+
+<div class="col-xs-offset-3 col-xs-6 col-xs-offset-3 table">
+<table>
+	<% @order.each do |status| %>
+	<tr>
+	    <th><%= status.pick_up_location %></th>
+	    <th><%= status.destination_location %></th>
+	    <th><%= status.cost %></th>
+	  </tr>
+<% end %>
+    </table>
+	
+
+</div>
+
+<div class="col-xs-offset-5 col-xs-2 col-xs-offset-5">
+	<div class="btn-group btn-group-lg btn-block seeBtn" role="group"><h3 class="txtBtn"><b>SEE MORE</b></h3></div>
+	
+</div>
+
+<script>
+
+	function openNav() {
+   		 document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+    	document.getElementById("mySidenav").style.width = "0";
+	}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWuC3aPv5RIDIv4cmOTOI1x8ngWYmj16Q&callback=myMap"></script>
+
+</body>
+</html>

@@ -15,13 +15,25 @@ class OrdersController < ApplicationController
 
   # GET /orders/1
   # GET /orders/1.json
-  # def show
-  # end
+  def show
+    
+    @order = Order.find(params[:id])
+    if @order.completed_status == "not completed"
+      @driver = Driver.find(@order.driver_id)
+      @data = [@order, @driver]
+    elsif 
+      redirect_to pick_up_path
+    end
+
+    
+
+  end
 
   # GET /orders/new
   def new
     @order = Order.new
-    @data = [@@pick_up, @@destination, @@pick_up_address, @@destination_address]
+    @driver = Driver.all
+    @data = [@@pick_up, @@destination, @@pick_up_address, @@destination_address, @driver]
     # render plain: @data.inspect
 
   end
@@ -33,14 +45,18 @@ class OrdersController < ApplicationController
   # POST /orders
   # POST /orders.json
   def create
+    @order_params = params[:order]
     @order = Order.new
+    @order.completed_status = "not completed"
     @order.pick_up_location = @@pick_up_address
     @order.destination_location = @@destination_address
     @order.pick_up_place_id = @@pick_up
     @order.destination_place_id = @@destination
-    @order.notes_for_driver = params[:notes_for_driver]
+    @order.notes_for_driver = @order_params[:notes_for_driver]
     @order.date = DateTime.now
-    @order.cost = params[:cost]
+    @order.cost = @order_params[:cost]
+    @order.user_id = current_user.id
+    @order.driver_id = 1
 
     respond_to do |format|
       if @order.save
@@ -72,7 +88,7 @@ class OrdersController < ApplicationController
   def destroy
     @order.destroy
     respond_to do |format|
-      format.html { redirect_to new_order_path, notice: 'Order was successfully destroyed.' }
+      format.html { redirect_to pick_up_path, notice: 'Order was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -100,6 +116,11 @@ class OrdersController < ApplicationController
 
     redirect_to new_order_path
 
+  end
+
+  def history
+          @order = Order.where(["user_id = ? ", current_user.id])
+    
   end
 
   private

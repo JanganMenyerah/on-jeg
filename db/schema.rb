@@ -35,9 +35,15 @@ ActiveRecord::Schema.define(version: 2018_09_11_161309) do
     t.string "completed_status"
     t.string "pick_up_location"
     t.string "destination_location"
+    t.string "pick_up_place_id"
+    t.string "destination_place_id"
     t.string "notes_for_driver"
+    t.bigint "user_id"
+    t.bigint "driver_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["driver_id"], name: "index_orders_on_driver_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -54,4 +60,6 @@ ActiveRecord::Schema.define(version: 2018_09_11_161309) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "orders", "drivers"
+  add_foreign_key "orders", "users"
 end

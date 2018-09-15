@@ -9,8 +9,8 @@ class CreateOrders < ActiveRecord::Migration[5.2]
       t.string :pick_up_place_id
       t.string :destination_place_id
       t.string :notes_for_driver
-      #driver id
-      #user id
+      t.references :user, index: true, foreign_key: true
+      t.references :driver, index: true, foreign_key: true
       t.timestamps
     end
   end

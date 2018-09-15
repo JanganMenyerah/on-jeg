@@ -9,11 +9,11 @@ module Accessible
     if current_driver
       flash.clear
       # if you have rails_driver. You can redirect anywhere really
-      redirect_to(authenticated_driver_root_path) && return
+      redirect_to(driver_order_page_path) && return
     elsif current_user
       flash.clear
       # The authenticated root path can be defined in your routes.rb in: devise_scope :user do...
-      redirect_to(new_order_path) && return
+      redirect_to(pick_up_path) && return
     end
   end
 end

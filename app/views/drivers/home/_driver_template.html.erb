@@ -6,22 +6,22 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  .cancelorder {
-    margin-left:40%;
-    margin-top: -50%;
-  }
+.journey{
+  margin-left:45%;
+  margin-top: 5%;
+}
+
 </style>
 </head>
-
 <body>
 
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <%= image_tag("order/user.png", :alt => "logo", :width => "150", :height => "150") %>
-  <%= link_to 'Profile', edit_user_registration_path, :class => 'navbar-link' %>
+  <%= link_to 'Profile', edit_driver_registration_path, :class => 'navbar-link' %>
   <!-- <a href="#">Bookings</a> -->
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+  <%= link_to "Logout", destroy_driver_session_path, method: :delete, :class => 'navbar-link'  %>
 </div> 
 
 <span style="font-size:30px;cursor:pointer" class="hamburger" onclick="openNav()">&#9776; On-Jeg</span>
@@ -39,6 +39,7 @@
     	document.getElementById("mySidenav").style.width = "0";
 	}
   </script>
+
 
 </body>
 </html>
